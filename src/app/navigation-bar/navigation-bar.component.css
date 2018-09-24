@@ -1,0 +1,9 @@
+.img-circle {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+.ml {
+    margin-left: 5px;
+}

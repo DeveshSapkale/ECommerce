@@ -1,0 +1,38 @@
+<div class="d-flex justify-content-center align-items-center container">
+  <div class="card border-primary" style="width: 30rem; margin-top: 20px">
+    <div class="card-header text-center text-white bg-primary mb-3   ">
+      <b> Register </b>
+    </div>
+    <form [formGroup]="registerformgroup" (ngSubmit)="onRegister()" class="card-body">
+      <div class="form-group text-primary">
+        <label for="firstName">First Name</label>
+        <input type="email" class="form-control" id="firstName" name="firstName" formControlName="firstName"
+          aria-describedby="emailHelp" placeholder="First Name">
+      </div>
+      <div class="form-group text-primary">
+        <label for="lastName">Last Name</label>
+        <input type="email" class="form-control" id="lastName" name="lastName" formControlName="lastName"
+          aria-describedby="emailHelp" placeholder="Last Name">
+      </div>
+      <div class="form-group text-primary">
+        <label for="emailId">Email address</label>
+        <input type="email" class="form-control" id="emailId" name="emailId" formControlName="emailId" aria-describedby="emailHelp"
+          placeholder="Email Id">
+      </div>
+      <div class="form-group text-primary">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" name="password" formControlName="password"
+          placeholder="Password">
+      </div>
+      <div class="form-group text-primary">
+        <label for="confirmPassword">Password</label>
+        <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" formControlName="confirmPassword"
+          placeholder="Re-enter Password">
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">Register</button>
+      </div>
+
+    </form>
+  </div>
+</div>
